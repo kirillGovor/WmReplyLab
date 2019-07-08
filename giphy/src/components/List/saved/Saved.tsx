@@ -3,7 +3,7 @@ import _ from 'lodash';
 import '../list.css';
 import { IRootObject, deleteWithLocalStorage } from '../interfacesConstansFunctions';
 
-class Stickers extends Component<IRootObject,IRootObject> {
+class Stickers extends Component<IRootObject, IRootObject> {
   public state: IRootObject = {
     data: [],
     SavedImages: []
@@ -20,7 +20,7 @@ class Stickers extends Component<IRootObject,IRootObject> {
   }
 
   render() {
-    if (this.state.data.length>0) {
+    if (this.state.data.length > 0) {
       const list = this.state.data.map((item, id) =>
         <div key={id} className="backgroundDeleteImages">
           <img key={Math.floor(Math.random() * 9999)} className="images" style={{ border: "solid 1px black", backgroundColor: "#c7de12" }}

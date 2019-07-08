@@ -63,10 +63,10 @@ class Searched extends Component<IProps & RouteProps>  {
     if (this.state.data.length > 0) {
       const list = this.state.data.map((item, k) =>
         <div key={k} style={{ width: item.images.fixed_height.width }} className="backgroundImages">
-          <img key={Math.floor(Math.random() * 9999)  } className="images" style={{ border: "solid 1px black", backgroundColor: "#c7de12" }} height={item.images.fixed_height.height}
+          <img key={Math.floor(Math.random() * 9999)} className="images" style={{ border: "solid 1px black", backgroundColor: "#c7de12" }} height={item.images.fixed_height.height}
             width={item.images.fixed_height.width} src={item.images.fixed_height.url}
-            onClick={() => onClick(item) }
-            ></img>
+            onClick={() => onClick(item)}
+          ></img>
         </div>
       );
       return (

@@ -40,16 +40,14 @@ class App extends Component {
 
     return (
       <Router>
-       
-        
         <Menu />
         <Search inputValue={""} />
         <Switch>
-        <Route exact path="/" component={List}></Route>
-        <Route exact path="/stickers" component={Stickers}></Route>
-        <Route exact path="/trending" component={Trending}></Route>
-        <Route exact path="/saved" component={Saved}></Route>
-        <Route exact path="/search/:searched" component={Searched}></Route>
+          <Route exact path="/" component={List}></Route>
+          <Route exact path="/stickers" component={Stickers}></Route>
+          <Route exact path="/trending" component={Trending}></Route>
+          <Route exact path="/saved" component={Saved}></Route>
+          <Route exact path="/search/:searched" component={Searched}></Route>
         </Switch>
       </Router>
     );

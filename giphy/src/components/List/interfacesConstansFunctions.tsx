@@ -27,8 +27,8 @@ export interface IRootObject {
     data: IDataItem[],
     SavedImages: IDataItem[],
     find?: string,
-    type?:string,
-    updateFind?:boolean
+    type?: string,
+    updateFind?: boolean
 }
 
 export interface IDataItem {
@@ -58,7 +58,7 @@ export interface ISearch {
 }
 
 //functions
-export async function search(recivedMessage: string, length: number, type: string|undefined) {
+export async function search(recivedMessage: string, length: number, type: string | undefined) {
     if (recivedMessage === "") {
         recivedMessage = "trending"
     }
