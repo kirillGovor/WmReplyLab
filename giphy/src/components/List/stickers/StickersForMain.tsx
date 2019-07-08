@@ -4,7 +4,7 @@ import '../list.css';
 import { Link } from 'react-router-dom';
 import { IRootObject, onClick, getApi } from '../interfacesConstansFunctions';
 
-class StickersForMain extends Component<IRootObject,IRootObject> {
+class StickersForMain extends Component<{},IRootObject> {
 
     public state: IRootObject = {
         data: [],

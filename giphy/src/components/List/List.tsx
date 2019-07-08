@@ -10,8 +10,8 @@ class List extends Component {
     return (
       <div>
         <div className='list'>
-          <GiphtForMain data={[]} SavedImages={[]} />
-          <StikersForMain data={[]} SavedImages={[]} />
+          <GiphtForMain />
+          <StikersForMain/>
         </div>
         <div className="footer">
           <h1>By giphy</h1>

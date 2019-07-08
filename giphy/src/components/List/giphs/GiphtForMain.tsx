@@ -4,7 +4,7 @@ import '../list.css';
 import { IRootObject, getApi, onClick } from '../interfacesConstansFunctions';
 import { Link } from 'react-router-dom';
 
-class Trending extends Component<IRootObject, IRootObject> {
+class Trending extends Component<{}, IRootObject> {
 
     public state: IRootObject = {
         data: [],
