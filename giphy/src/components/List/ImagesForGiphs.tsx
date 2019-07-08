@@ -33,7 +33,7 @@ class Imagess extends Component<IRootObject>{
   }
 
   fetchMoreData = () => {
-    setTimeout(() => {
+    
       return fetch(`http://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=${this.state.data.length + 25}&offset=0`)
         .then(res => res.json())
         .then(json => {
@@ -47,7 +47,7 @@ class Imagess extends Component<IRootObject>{
           }
         })
 
-    }, 1500);
+   
   };
 
 
@@ -60,7 +60,7 @@ class Imagess extends Component<IRootObject>{
       const list = this.state.data.map((item, k) =>
 
         <div key={k} className="backgroundImages">
-          <img key={k} className="images" style={{ border: "solid 1px black", backgroundColor: "yellow" }}
+          <img key={k} className="images" style={{ border: "solid 1px black", backgroundColor: "#c7de12" }}
             height={item.images.fixed_height.height} width={item.images.fixed_height.width} src={item.images.fixed_height.url}
          //   onClick={this.handleClick(item)}
             onClick={e => {

@@ -1,5 +1,6 @@
 .InpuSearch{
     color: white;
+    background:#c7de12;
     width: 86%;
     font-size: 20px;
     height: 40px;
@@ -10,14 +11,18 @@
 .InpuSearch::placeholder {
     color: white;
   }
+  .InpuSearch:focus{
+    background:black; 
+    border: solid 1px #c7de12;
+  }
 .buttonFind{
     height: 45px;
     margin-left: 20px;
-    background-color: white;
     cursor: pointer;
     padding-top: 7px;
     border: solid 1px;
     width: 10%;
+    background-color: #c7de12;
 }
 .search{ 
     max-width: 1200px;

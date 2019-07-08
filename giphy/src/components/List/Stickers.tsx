@@ -11,38 +11,16 @@ class Stickers extends Component {
     SavedImages: []
   };
 
-  componentDidMount() {
-    return fetch(`http://api.giphy.com/v1/stickers/trending?api_key=${API_KEY}&limit=25&offset=0`)
-      .then(res => res.json())
-      .then(json => {
-        if (json.error) {
-          alert("Error")
-        } else {
-          this.setState({
-            data: json.data
-          })
-        }
-      })
-
-  }
-
   render() {
 
 
-    if (this.state.data.length > 0) {
+  
       return (
         <div className="StyleList">
           <h1>Stickers</h1>
           <StickersImages data={this.state.data} SavedImages={this.state.SavedImages}></StickersImages>
         </div>
       )
-    }
-
-    else {
-      return (
-        <div>Loading...</div>
-      )
-    }
   }
 }
 

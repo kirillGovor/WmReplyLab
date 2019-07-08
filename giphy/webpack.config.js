@@ -5,7 +5,8 @@ module.exports = {
   output: {
     filename: "bundle.js",
     path: __dirname + "/dist",
-    publicPath: '/'
+    publicPath: '/',
+    chunkFilename: '[name].bundle.js',
   },
 
   mode: process.env.NODE_ENV || "development",

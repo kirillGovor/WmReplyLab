@@ -33,7 +33,6 @@ class StickersImages extends Component<IRootObject>{
     }
 
     fetchMoreData = () => {
-        setTimeout(() => {
             return fetch(`http://api.giphy.com/v1/stickers/trending?api_key=${API_KEY}&limit=${this.state.data.length + 25}&offset=0`)
                 .then(res => res.json())
                 .then(json => {
@@ -47,7 +46,6 @@ class StickersImages extends Component<IRootObject>{
                     }
                 })
 
-        }, 1500);
     };
 
 
@@ -56,7 +54,7 @@ class StickersImages extends Component<IRootObject>{
         if (this.state.data.length > 0) {
             const list = this.state.data.map((item, k) =>
                 <div key={k} className="backgroundImages">
-                    <img key={k} className="images" style={{ border: "solid 1px black", backgroundColor: "white" }} height={item.images.fixed_height.height}
+                    <img key={k} className="images" style={{ backgroundColor: "#c7de12" }} height={item.images.fixed_height.height}
                         width={item.images.fixed_height.width} src={item.images.fixed_height.url}
 
                         onClick={e => {

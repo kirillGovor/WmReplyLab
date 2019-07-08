@@ -81,7 +81,7 @@ class SearchedImages extends Component<IProps & RouteProps>{
 
             const list = this.state.data.map((item, k) =>
                 <div key={k} className="backgroundImages">
-                    <img key={k} className="images" style={{ border: "solid 1px black", backgroundColor: "yellow" }} height={item.images.fixed_height.height}
+                    <img key={k} className="images" style={{ border: "solid 1px black", backgroundColor: "#c7de12" }} height={item.images.fixed_height.height}
                         width={item.images.fixed_height.width} src={item.images.fixed_height.url}
 
                         onClick={e => {

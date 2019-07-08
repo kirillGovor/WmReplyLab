@@ -1,6 +1,6 @@
 .Menu{
     display: flex;
-    border: solid 2px black;
+    border: solid 2px #c7de12;
 }
 h1{
     color: white;
@@ -10,8 +10,9 @@ h1{
 }
 a{
     text-decoration: none;
+    color: #c7de12;
 }
 h1:hover{
-    color: black;
+    color: #c7de12;
     text-shadow: -1px -1px 0px white, 0px -1px 0px white, 1px -1px 0px white, -1px 0px 0px white, 1px 0px 0px white, -1px 1px 0px white, 0px 1px 0px white 1px 1px 0px white;
 }
