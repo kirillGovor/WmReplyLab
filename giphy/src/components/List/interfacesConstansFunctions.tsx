@@ -92,6 +92,9 @@ export function onClick(item: IDataItem): void {
         returnvalueJSON1 = JSON.parse(returnvalueJSON1);
         returnvalueJSON1 = returnvalueJSON1.concat(list)
     }
+    else{
+        returnvalueJSON1 = list
+    }
     let valueJSON1 = JSON.stringify(returnvalueJSON1);
     localStorage.setItem("Saved", valueJSON1);
 }
