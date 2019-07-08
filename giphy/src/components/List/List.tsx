@@ -10,7 +10,7 @@ class List extends Component {
     return (
       <div>
         <div className='list'>
-          <GiphtForMain />
+          <GiphtForMain/>
           <StikersForMain/>
         </div>
         <div className="footer">

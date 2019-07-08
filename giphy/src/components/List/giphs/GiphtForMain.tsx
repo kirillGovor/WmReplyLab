@@ -12,7 +12,7 @@ class Trending extends Component<{}, IRootObject> {
     };
 
     componentDidMount() {
-        getApi(-18, "gifs").then(arrayImage => //-18 т.к. на гл станичке выводится по 8 изображений
+        getApi(0, "stickers",true).then(arrayImage => //-18 т.к. на гл станичке выводится по 7 изображений
             this.setState({
                 data: arrayImage,
             })

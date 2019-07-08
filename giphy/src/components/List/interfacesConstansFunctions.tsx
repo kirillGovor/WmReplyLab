@@ -1,7 +1,7 @@
 //constants
 export const API_KEY: string = "HfShRO0x4JtJ5f34VTuoYNn23Qrc9nuH";
 export const MaxImagesLoading: number = 25;
-
+export const MaxLoadingForMain=7;
 //interfaces
 export interface IFixed_height {
     url: string;
@@ -73,8 +73,8 @@ export async function search(recivedMessage: string, length: number, type: strin
     }
 }
 
-export async function getApi(length: number, type: string) {
-    const search = await fetch(`http://api.giphy.com/v1/${type}/trending?api_key=${API_KEY}&limit=${MaxImagesLoading + length}&offset=0`)
+export async function getApi(length: number, type: string, trueMain?:boolean) {
+    const search = await fetch(`http://api.giphy.com/v1/${type}/trending?api_key=${API_KEY}&limit=${trueMain ? MaxLoadingForMain : MaxImagesLoading + length}&offset=0`)
     const json = await search.json();
     if (json.error) {
         return await (json.error)
