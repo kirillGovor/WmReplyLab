@@ -24,6 +24,11 @@
     width: 10%;
     background-color: #c7de12;
 }
+.buttonFind:hover{
+    background-color: black;
+    color:#c7de12;
+    border:solid 1px #c7de12;
+    }
 .search{ 
     max-width: 1200px;
     margin: auto;
@@ -31,8 +36,38 @@
     margin-bottom: 40px;
 }
 .backgroundImages{
-    background-image: url(../images/like.jpg);
+    background-image: url(../images/like2.png);
     background-size: auto;
     background-repeat: no-repeat;
     height: 200px;
+ 
+}
+.infinite-scroll-component {
+    overflow: hidden !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+.images{
+    cursor:pointer;
+    transition:0.3s;
+    border: "solid 1px black";
+    background-color: "#c7de12";
+}
+.images:hover{
+    opacity:0;
+}
+h3{
+    color: #c7de12;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.h3Style{
+    text-decoration:underline;
 }

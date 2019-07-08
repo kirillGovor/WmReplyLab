@@ -1,21 +1,17 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
-import './list.css';
+import '../list.css';
 import Imagess from './ImagesForGiphs';
-import { IRootObject, API_KEY } from './interfaces';
+import { IRootObject } from '../interfacesConstansFunctions';
 
-
-class Trending extends Component<IRootObject> {
+class Trending extends Component<IRootObject,IRootObject> {
 
   public state: IRootObject = {
     data: [],
     SavedImages: [],
   };
 
-
-
   render() {
-   
       return (
         <div className="StyleList">
           <h1>Giphs</h1>
